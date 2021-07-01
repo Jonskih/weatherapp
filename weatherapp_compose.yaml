@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  weatherapp_backend:
+    image: backendimg
+    ports:
+      - "9000:9000"
+  weatherapp_frontend:
+    image: frontendimg
+    ports:
+      - "8000:8000"
