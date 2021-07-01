@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  weatherapp_backend:
+    image: weather_backendimg
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "9000:9000"
+
+  weatherapp_frontend:
+    image: weather_frontendimg
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
